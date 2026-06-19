@@ -1,11 +1,410 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>Page Title</title>
-</head>
-<body>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Full Stack Developer Portfolio</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./assets/bootstrap/css/bootstrap.min.css" />
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/main.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold" href="#home">
+          <span class="brand-accent">&lt;/</span>Dhananjay<span
+            class="brand-accent"
+            >&gt;</span
+          >
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
-<h1>Coming Soon....!!!!!</h1>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container h-100">
+        <div class="row align-items-center h-100 gy-4">
+          <div class="col-lg-6 order-lg-2 text-center text-lg-start">
+            <div class="hero-intro">I'm</div>
+            <h1 class="hero-title">Dhananjay A. Ambhure</h1>
+            <h2 class="hero-role">Full Stack Developer</h2>
+            <p class="hero-description">
+              6+ years crafting enterprise-grade CMS solutions with Drupal,
+              Contentful & React, specializing in headless architectures,
+              AI-assisted workflows, and modern digital experiences.
+            </p>
+            <div
+              class="hero-actions d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start"
+            >
+              <a href="#contact" class="btn btn-hero btn-white">Download CV</a>
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-1 text-center">
+            <div class="hero-image-wrapper">
+              <div class="hero-image-frame">
+                <img
+                  src="./assets/images/myprofile.jpeg"
+                  alt="Profile"
+                  class="hero-image-circle"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</body>
+    <!-- About Section -->
+    <section id="about" class="about py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="section-title text-center mb-5">About Me</h2>
+            <p class="text-justify fs-5 mb-4">
+              I am a Full Stack Developer with 6+ years of experience designing,
+              architecting, and delivering scalable enterprise solutions using
+              Drupal (7, 8, 10), Contentful, WordPress, and headless CMS
+              architectures. Specialized in custom module/plugin/Apps
+              development, API integrations (REST/GraphQL), multilingual
+              workflows, accessibility (WCAG), and robust CI/CD pipelines.
+              Proficient in PHP, JavaScript, TypeScript, and React, with proven
+              expertise leveraging modern AI-powered developer workflows (GitHub
+              Copilot, Claude AI) and agentic AI tools to accelerate development
+              cycles, optimize enterprise publishing pipelines, and minimize
+              technical debt.
+            </p>
+            <p class="text-justify fs-5 mb-4">
+              Recognized with the Accenture ACE Extra Mile Award for high-impact
+              CMS delivery. Skilled in stakeholder management, cross-functional
+              solution design, and technical mentorship, consistently achieving
+              30% faster deployments and a 25% increase in team delivery
+              efficiency.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills py-5">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">Skills & Technologies</h2>
+        <div class="row">
+          <!-- CMS & Headless Architecture -->
+          <div class="col-lg-4 mb-4">
+            <div class="skill-category">
+              <h4 class="skill-category-title">CMS & Headless Architecture</h4>
+              <div class="skill-item">
+                <span>Drupal (8/9/10)</span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 95%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>Contentful CMS</span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 92%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>WordPress</span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>Decoupled/Headless CMS</span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 88%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Backend & Database -->
+          <div class="col-lg-4 mb-4">
+            <div class="skill-category">
+              <h4 class="skill-category-title">Backend & DB</h4>
+              <div class="skill-item">
+                <span>PHP (Advanced OOP)</span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 94%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>JavaScript / TypeScript</span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 90%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>MySQL / PostgreSQL</span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 91%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>Redis / Memcached</span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 85%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Frontend & DevOps -->
+          <div class="col-lg-4 mb-4">
+            <div class="skill-category">
+              <h4 class="skill-category-title">Frontend & DevOps</h4>
+              <div class="skill-item">
+                <span>React / Next.js</span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 88%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>HTML5 / CSS3 / Bootstrap</span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 94%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>Docker / CI-CD / Jenkins</span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 87%"></div>
+                </div>
+              </div>
+              <div class="skill-item">
+                <span>GitHub Copilot / Claude AI</span>
+                <div class="progress">
+                  <div class="progress-bar" style="width: 92%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience py-5">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">Professional Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h4 class="timeline-title">
+                Custom Software Engineering Senior Analyst
+              </h4>
+              <p class="timeline-company">Accenture | Jun 2024 – Present</p>
+              <p class="timeline-description">
+                Leading enterprise Contentful-based headless CMS implementations
+                with TypeScript, React, and Next.js. Architecting multilingual
+                workflows, automating content provisioning, and mentoring junior
+                developers.
+              </p>
+              <div class="timeline-tech">
+                <span>Contentful</span>
+                <span>TypeScript</span>
+                <span>React</span>
+                <span>GraphQL</span>
+                <span>Next.js</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h4 class="timeline-title">
+                Custom Software Engineering Analyst
+              </h4>
+              <p class="timeline-company">Accenture | Jan 2023 – Jun 2024</p>
+              <p class="timeline-description">
+                Engineered Drupal-based headless CMS solutions for enterprise
+                healthcare clients. Designed complex content architectures,
+                built custom modules, and executed large-scale data migrations.
+              </p>
+              <div class="timeline-tech">
+                <span>Drupal 10</span>
+                <span>PHP</span>
+                <span>JSON:API</span>
+                <span>Custom Modules</span>
+                <span>Acquia Cloud</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h4 class="timeline-title">System Engineer</h4>
+              <p class="timeline-company">Infosys | Dec 2021 – Jan 2023</p>
+              <p class="timeline-description">
+                Built custom Drupal CMS backend for global logistics client.
+                Migrated legacy content, created component-driven architectures,
+                and optimized search performance on Acquia Cloud.
+              </p>
+              <div class="timeline-tech">
+                <span>Drupal</span>
+                <span>Acquia Site Studio</span>
+                <span>Redis</span>
+                <span>SonarQube</span>
+                <span>CI/CD</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h4 class="timeline-title">Junior PHP Developer</h4>
+              <p class="timeline-company">
+                Nadsoft IT Solution | Feb 2020 – Dec 2021
+              </p>
+              <p class="timeline-description">
+                Designed and implemented WordPress and WooCommerce e-commerce
+                solutions. Developed custom plugins, integrated payment systems,
+                and optimized sites for SEO.
+              </p>
+              <div class="timeline-tech">
+                <span>WordPress</span>
+                <span>WooCommerce</span>
+                <span>PHP</span>
+                <span>MySQL</span>
+                <span>Elementor</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section class="certifications py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title text-center mb-5">Certifications & Awards</h2>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="cert-card">
+              <div class="cert-icon">🏆</div>
+              <h5>Accenture ACE Extra Mile Award</h5>
+              <p>February 2025 & March 2026 | High-impact CMS delivery</p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="cert-card">
+              <div class="cert-icon">📜</div>
+              <h5>Contentful Certified Content Manager</h5>
+              <p>February 2026 | Expert-level CMS proficiency</p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="cert-card">
+              <div class="cert-icon">⭐</div>
+              <h5>Contentful Certified Professional</h5>
+              <p>March 2025 | Advanced CMS architecture</p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="cert-card">
+              <div class="cert-icon">🚀</div>
+              <h5>DevOps Academy & AI Learning Programs</h5>
+              <p>March 2025 & 2026 | Accenture & Stanford HAI</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <h2 class="section-title text-center mb-5">Get In Touch</h2>
+            <p class="text-center mb-5 fs-5">
+              Have a project in mind? I'd love to hear from you. Let's create
+              something amazing together!
+            </p>
+
+            <div class="social-links mt-5 text-center">
+              <h5 class="mb-3">Connect With Me</h5>
+              <a
+                href="https://www.linkedin.com/in/jayambhure"
+                target="_blank"
+                class="social-icon"
+                title="LinkedIn"
+              >
+                <i class="bi bi-linkedin"></i>
+              </a>
+              <a href="#" class="social-icon" title="Instagram">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="#" class="social-icon" title="GitHub">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="#" class="social-icon" title="Twitter">
+                <i class="bi bi-twitter"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-4">
+      <div class="container text-center">
+        <p class="mb-0">
+          &copy; 2024 Dhananjay A. Ambhure | Full Stack Developer. All rights
+          reserved.
+        </p>
+        <p class="small mt-2">
+          Designed & Built with <span style="color: #ff6b6b">❤</span> using
+          HTML, CSS & Bootstrap
+        </p>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="./assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+  </body>
 </html>
